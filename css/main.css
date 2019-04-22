@@ -6,16 +6,13 @@ body{
 }
 .sect__size{
   height: 100vh;
-  background: black;
   position: relative;
   top: 0;
   left: 0;
 }
 .div__size{
-  background: greenyellow;
   width: 70%;
-  height: 25%;          /*ALARM!!!!!!!!!!*/
-  padding: 5vh;
+  height: 50%;          /*ALARM!!!!!!!!!!*/
   position: absolute;
   top: 0;
   right: 0;
@@ -24,8 +21,12 @@ body{
   margin: auto;
 }
 .child__size{
-  font-size: 20vh;
+  background: red;
+  margin: 9% 0 0 0;
+  font-size: 16vw;
+  height: 100%;
   text-align: center;
+  color: #ffd5fd;
 }
 
 
@@ -170,8 +171,8 @@ footer{
   filter: blur(0.5vh) drop-shadow(0 0 2vh black);
   will-change: filter;
   transition: 400ms;
-  width: 5vh;
-  height: 5vh;
+  width: 4.5vh;
+  height: 4.5vh;
   will-change: transform;
 }
 .ico:hover{

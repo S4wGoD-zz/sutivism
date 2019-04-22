@@ -1,0 +1,10 @@
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait){
+  .div__size{
+    width: 1vw;
+  }
+  .child__size{
+    line-height: 10vw;
+    background: yellow;
+  }
+
+}

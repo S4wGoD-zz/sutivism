@@ -5,6 +5,7 @@
   <meta http-equiv="content-type" content="text/html" charset="utf-8">
 
   <link rel="stylesheet" href="css/default.css">
+  <link rel="stylesheet" href="css/adaptive.css">
   <link rel="stylesheet" href="css/preloader.css">
   <link rel="stylesheet" href="css/main.css">
 
@@ -30,7 +31,10 @@
 
   <section class="sect__size" id="middle">
     <nav class="top"></nav>         <!--Up-->
-    <h1>222 </h1>
+    <div class="div__size">
+<!--        <iframe src="http://localhost:63342/sutivism/main.php?_ijt=re3pb44esiiv3fqprg8scl4rgo" width="80%" height="80%" frameborder="1"> </iframe>-->
+
+    </div>
     <nav class="down"></nav>          <!--Down-->
   </section>
 
