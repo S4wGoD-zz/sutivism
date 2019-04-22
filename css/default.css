@@ -1,0 +1,145 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    box-sizing: border-box;
+    font-family: "Yandex Sans Display Regular";
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body{
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/*Yandex Sans Display Light*/
+@font-face {
+    font-family: 'Yandex Sans Display Light';
+    src: url('/style/font/sans-serif/YandexSansDisplay-Light.eot');
+    src: url('/style/font/sans-serif/YandexSansDisplay-Light.eot?#iefix') format('embedded-opentype'),
+    url('/style/font/sans-serif/YandexSansDisplay-Light.woff') format('woff'),
+    url('/style/font/sans-serif/YandexSansDisplay-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+/*Yandex Sans Display Regular*/
+@font-face {
+    font-family: 'Yandex Sans Display Regular';
+    src: url('/style/font/regular/YandexSansDisplay-Regular.eot');
+    src: url('/style/font/regular/YandexSansDisplay-Regular.eot?#iefix') format('embedded-opentype'),
+    url('/style/font/regular/YandexSansDisplay-Regular.woff') format('woff'),
+    url('/style/font/regular/YandexSansDisplay-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+/*Yandex Sans Display Bold*/
+@font-face {
+    font-family: 'Yandex Sans Display Bold';
+    src: url('/style/font/bold/YandexSansDisplay-Bold.eot');
+    src: url('/style/font/bold/YandexSansDisplay-Bold.eot?#iefix') format('embedded-opentype'),
+    url('/style/font/bold/YandexSansDisplay-Bold.woff') format('woff'),
+    url('/style/font/bold/YandexSansDisplay-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*PROPERTIES*/
+
+::-webkit-scrollbar-button {
+    background-image: url('');
+    background-repeat: no-repeat;
+    width: 5px;
+    height: 0;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #7a347e;
+}
+
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 0;
+    border-radius: 3vh;
+    background-color: #b159ae;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background-color: plum;
+}
+
+::-webkit-resizer{
+    background-image: url('');
+    background-repeat: no-repeat;
+    width: 1vh;
+    height: 0;
+}
+
+::-webkit-scrollbar{
+    width: 1vh;
+}
+::selection {
+    background: #8a5593;
+    color: #eaa7f5;
+}
+
+section{
+    position: relative;
+}
+
+nav{
+    position: absolute;
+    /*left: 49.6vw;*/
+    right: 2.5vw;
+    text-align: right;
+    cursor: pointer;
+    text-shadow: black 0 0 4vh;
+}
+
+.top{
+    top: 3vh;
+}
+.down{
+    bottom: 3vh;
+}
+.top:before{
+    content: "\1F895";
+    font-size: 8vh;
+    color: #fea4ff;
+}
+.down:before{
+    content: "\1F897";
+    font-size: 8vh;
+    color: #fea4ff;
+}

@@ -1,0 +1,56 @@
+.loaderArea{
+  background: linear-gradient(180deg, #a565ff 25%, #a524e3 75%);
+  overflow: hidden;
+  position: fixed;
+  left: 0; top: 0; right: 0; bottom: 0;
+  z-index: 99999;
+}
+.loader{
+  height: 3vh;
+  width: 3vh;
+  position: absolute;
+  left: 50%;
+  margin-left: -1vw;
+  top: 50%;
+  margin-top: -1vw;
+}
+
+.loader:before,
+.loader:after {
+  content: "";
+  height: 3vh;
+  width: 3vh;
+  border: 1vh dotted rgba(255,255,255,.5);
+  border-radius: 1vw;
+  position: absolute;
+  top: 0;
+}
+
+.loader:before {
+  animation: animate 2s infinite linear;
+}
+
+@keyframes animate {
+  0% {
+    transform: rotate(0) skew(0);
+  }
+
+  100% {
+    transform: rotate(180deg) skew(360deg);
+  }
+}
+
+
+.loader:after {
+  animation: animate2 2s infinite linear;
+}
+
+@keyframes animate2 {
+  0% {
+    transform: rotate(0) skew(0);
+  }
+
+  100% {
+    transform: rotate(-180deg) skew(-360deg);
+  }
+}

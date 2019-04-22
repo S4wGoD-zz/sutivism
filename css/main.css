@@ -1,0 +1,183 @@
+body{
+  width: 100%;
+}
+#page{
+  display: block;
+}
+.sect__size{
+  height: 100vh;
+  background: black;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.div__size{
+  background: greenyellow;
+  width: 70%;
+  height: 25%;          /*ALARM!!!!!!!!!!*/
+  padding: 5vh;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
+.child__size{
+  font-size: 20vh;
+  text-align: center;
+
+}
+
+
+#main{
+  background: #aa14ff;
+  height: 100vh;
+}
+#middle{
+  background: #731EA5;
+  height: 100vh;
+}
+#last{
+  background: #2a0e41;
+  height: 100vh;
+}
+
+#character{
+  display: flex;
+  height: 55%;
+  width: 100%;
+}
+.box{
+  height: 100%;
+  width: 12.5%;
+}
+#feat1{
+  background: purple;
+  color: purple;
+  transition: all 300ms cubic-bezier(.30, .30, 1, 1);
+}
+#feat1:hover{
+  background: #14151f;
+  color: lightgoldenrodyellow;
+}
+
+#feat2{
+  background: hotpink;
+  color: hotpink;
+  transition: all 300ms cubic-bezier(.30, .30, 1, 1);
+}
+#feat2:hover{
+  background: #14151f;
+  color: lightgoldenrodyellow;
+}
+
+#feat3{
+  background: darkorchid;
+  color: darkorchid;
+  transition: all 300ms cubic-bezier(.30, .30, 1, 1);
+}
+#feat3:hover{
+  background: #14151f;
+  color: lightgoldenrodyellow;
+}
+
+#feat4{
+  background: orchid;
+  color: orchid;
+  transition: all 300ms cubic-bezier(.30, .30, 1, 1);
+}
+#feat4:hover{
+  background: #14151f;
+  color: lightgoldenrodyellow;
+}
+
+#feat5{
+  background: darkviolet;
+  color: darkviolet;
+  transition: all 300ms cubic-bezier(.30, .30, 1, 1);
+}
+#feat5:hover{
+  background: #14151f;
+  color: lightgoldenrodyellow;
+}
+
+#feat6{
+  background: darkmagenta;
+  color: darkmagenta;
+  transition: all 300ms cubic-bezier(.30, .30, 1, 1);
+}
+#feat6:hover{
+  background: #14151f;
+  color: lightgoldenrodyellow;
+}
+
+#feat7{
+  background: magenta;
+  color: magenta;
+  transition: all 300ms cubic-bezier(.30, .30, 1, 1);
+}
+#feat7:hover{
+  background: #14151f;
+  color: lightgoldenrodyellow;
+}
+
+#feat8{
+  background: rebeccapurple;
+  color: rebeccapurple;
+  transition: all 300ms cubic-bezier(.30, .30, 1, 1);
+}
+#feat8:hover{
+  background: #14151f;
+  color: lightgoldenrodyellow;
+}
+
+#feat9{
+  background: mediumvioletred;
+  color: mediumvioletred;
+  transition: all 300ms cubic-bezier(.30, .30, 1, 1);
+}
+#feat9:hover{
+  background: #14151f;
+  color: lightgoldenrodyellow;
+}
+
+
+footer{
+  height: 45%;
+  padding: 2%;
+  width: 100%;
+  background: #14151f;
+  color: #222434;
+  text-align: center;
+  text-shadow: black 0 0 2vh;
+}
+#head{
+  font-size: 2.5vh;
+}
+#sub{
+  font-size: 1.5vh;
+  line-height: 1.5;
+}
+.icons{
+  padding-top: 0.4%;
+  transition: 800ms;
+  filter: brightness(75%);
+}
+.icons:hover{
+  filter: brightness(100%) drop-shadow(0 0 2vh #8025ce);
+}
+.ico{
+  filter: blur(0.5vh) drop-shadow(0 0 2vh black);
+  will-change: filter;
+  transition: 400ms;
+  width: 5vh;
+  height: 5vh;
+  will-change: transform;
+}
+.ico:hover{
+  transform: scale(1.1);
+  filter: blur(0);
+  pointer-events: all;
+  user-select: all;
+}
