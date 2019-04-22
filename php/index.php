@@ -30,7 +30,7 @@
 
   <section class="sect__size" id="middle">
     <nav class="top"></nav>         <!--Up-->
-    <h1>222</h1>
+    <h1>222 </h1>
     <nav class="down"></nav>          <!--Down-->
   </section>
 

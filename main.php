@@ -1,6 +1,6 @@
 <?php
 
-$proj = "SUTIVISM";
+$proj = "SUVITISM";
 $tit = "ahah";
 
 include "php/index.php";
