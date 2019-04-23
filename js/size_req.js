@@ -26,32 +26,54 @@ function req( url ){
   var url = url || '';
   var head = document.getElementsByTagName('head')[0];
   var myCSSsize = document.getElementById('adapt');
-  const w = window.innerWidth;
-  const h = window.innerHeight;
 
             //Calc the resolution
-  console.log("Width: " + w + ";");
-  console.log("Height: " + h + ".");
+  const q = "px";
+  const w = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+  const h = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
 
+  const ph = "Phone!";
+  const iphn = "iPhone 6/7/8 Plus!"
+  const iphx = "iPhone X!";
+  const ipd = "iPad";
+  const pc = "COMPUTER!";
 
-  if ( w<=360 && h<=640 ){          //--Phone
+  console.log("Width: " + w + q + ";");
+  console.log("Height: " + h + q + ".");
+
+  if( ( w===980 && h<=1920 ) || ( h<=500 ) ){
+    //--Phone
     console.log("Phone!");
-    url = "/css/adaptive/Phone.css";
+    document.getElementById("for__js").innerText = "Width: " + w + q + "\n" + "Height: "+ h + q + "\n" + ph;
+    url = "./css/adaptive/Phone.css";
   }
-  if ( w<=375 && h<=812 ){          //--iPhone 6/7/8 Plus
+  if( w<=375 && h<=812 ){
+    //--iPhone 6/7/8 Plus
     console.log("iPhone 6/7/8 Plus!");
-    url = "/css/adaptive/iPhone678Plus.css";
+    document.getElementById("for__js").innerText = "Width: " + w + q + "\n" + "Height: "+ h + q + "\n" + iphn;
+    url = "./css/adaptive/iPhone678Plus.css";
   }
-  if ( w<=414 && h<=736 ){          //--iPhone X
+  if( w<=460 && h<=736 ){
+    //--iPhone X
     console.log("iPhone X!");
-    url = "/css/adaptive/iPhoneX.css";
+    document.getElementById("for__js").innerText = "Width: " + w + q + "\n" + "Height: "+ h + q + "\n" + iphx;
+    url = "./css/adaptive/iPhoneX.css";
   }
-  if ( w<=1024 && h<=768 ){         //--iPAD
-    console.log("iPAD");
-    document.getElementById("for__js").innerText = "Width: " + w + "\n" + "Height: "+ h;
-    url = "css/adaptive/iPad.css";
+  if( w===1024 && h<=768 ){
+    //--iPAD
+    console.log("iPad!");
+    document.getElementById("for__js").innerText = "Width: " + w + q + "\n" + "Height: "+ h + q + "\n" + ipd;
+    url = "./css/adaptive/iPad.css";
   }
+
   else{
+    if( w>=1800 && h>=950){
+      console.log("COMPUTER");
+      document.getElementById("for__js").innerText = "Width: " + w + q + "\n" + "Height: "+ h + q + "\n" + pc;
+      url = "css/main.css"
+    }
+  }
+
     if( !myCSSsize )
     {
       myCSSsize = document.createElement('link');
@@ -60,7 +82,6 @@ function req( url ){
       myCSSsize.media = 'all';
       head.appendChild( myCSSsize );
     }
-}
 myCSSsize.href = url;
 // записываем значение выбранного фона в Cookie
 Cookie.set('sizer', url);
