@@ -5,13 +5,14 @@
   <meta http-equiv="content-type" content="text/html" charset="utf-8">
 
   <link rel="stylesheet" href="css/default.css">
-  <link rel="stylesheet" href="css/adaptive.css">
+<!--  <link rel="stylesheet" href="css/adaptive.css">-->
   <link rel="stylesheet" href="css/preloader.css">
   <link rel="stylesheet" href="css/main.css">
 
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
   <script src="js/jquery-3.1.1.min.js"></script>
   <script src="js/scroller.js"></script>
+  <script defer src="js/size_req.js"></script>
 </head>
 <body>
 <script src="js/preloader.js"></script>          <!--LOADER-->
@@ -22,7 +23,7 @@
   <section class="sect__size" id="main">
       <div class="div__size">
         <div class="child__size">
-          <h1><?php echo $proj; ?></h1>
+          <h1 id="for__js"></h1>
         </div>
       </div>
     <nav class="down"></nav>          <!--Down-->
