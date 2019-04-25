@@ -48,30 +48,30 @@ table {
 /*Yandex Sans Display Light*/
 @font-face {
     font-family: 'Yandex Sans Display Light';
-    src: url('./font/sans-serif/YandexSansDisplay-Light.eot');
-    src: url('./font/sans-serif/YandexSansDisplay-Light.eot?#iefix') format('embedded-opentype'),
-    url('./font/sans-serif/YandexSansDisplay-Light.woff') format('woff'),
-    url('./font/sans-serif/YandexSansDisplay-Light.ttf') format('truetype');
+    src: url('/font/sans-serif/YandexSansDisplay-Light.eot');
+    src: url('/font/sans-serif/YandexSansDisplay-Light.eot?#iefix') format('embedded-opentype'),
+    url('/font/sans-serif/YandexSansDisplay-Light.woff') format('woff'),
+    url('/font/sans-serif/YandexSansDisplay-Light.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 /*Yandex Sans Display Regular*/
 @font-face {
     font-family: 'Yandex Sans Display Regular';
-    src: url('./font/regular/YandexSansDisplay-Regular.eot');
-    src: url('./font/regular/YandexSansDisplay-Regular.eot?#iefix') format('embedded-opentype'),
-    url('./font/regular/YandexSansDisplay-Regular.woff') format('woff'),
-    url('./font/regular/YandexSansDisplay-Regular.ttf') format('truetype');
+    src: url('/font/regular/YandexSansDisplay-Regular.eot');
+    src: url('/font/regular/YandexSansDisplay-Regular.eot?#iefix') format('embedded-opentype'),
+    url('/font/regular/YandexSansDisplay-Regular.woff') format('woff'),
+    url('/font/regular/YandexSansDisplay-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 /*Yandex Sans Display Bold*/
 @font-face {
     font-family: 'Yandex Sans Display Bold';
-    src: url('./font/bold/YandexSansDisplay-Bold.eot');
-    src: url('./font/bold/YandexSansDisplay-Bold.eot?#iefix') format('embedded-opentype'),
-    url('./font/bold/YandexSansDisplay-Bold.woff') format('woff'),
-    url('./font/bold/YandexSansDisplay-Bold.ttf') format('truetype');
+    src: url('/font/bold/YandexSansDisplay-Bold.eot');
+    src: url('/font/bold/YandexSansDisplay-Bold.eot?#iefix') format('embedded-opentype'),
+    url('/font/bold/YandexSansDisplay-Bold.woff') format('woff'),
+    url('/font/bold/YandexSansDisplay-Bold.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
